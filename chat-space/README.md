@@ -4,8 +4,8 @@
 |------|----|-------|
 |id|integer|null: false|
 |name|string|null: false, unique: true|
-|email|integer|null: false, unique: true|
-|password|integer|null: false|
+|email|string|null: false, unique: true|
+|password|string|null: false|
 
 ### Association
 - has_many :groups, through:groups_users
