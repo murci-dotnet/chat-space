@@ -1,0 +1,35 @@
+.chat-main
+  .chat-main__header
+    .chat-main__header__left
+      Masa
+      %li.chat-main__header__left-member
+        Member : masa
+    .chat-main__header__right
+      %li.chat-main__header__right-item
+        = link_to "#" ,class: "editlink" do
+          Edit
+  
+  .chat-main__body
+    .chat-main__body__message
+      %p.chat-main__body__message__list
+        masa
+      %p.chat-main__body__message__time
+        2020/05/08(Fri) 16:52:51
+    %p.chat-main__body__message-text
+      hello!
+
+  .chat-main__footer
+    .chat-main__footer__box
+      .chat-main__footer_box-left
+        .chat-main__footer__box-left__message
+          -# = form_for @message do |f|
+          -#   type a message
+        %label{class:"chat-main__footer__box-left__icon"}
+          %i.fa.fa-image
+          %input{type:"file"}
+          %submit{class:"submit-box"}
+
+      .chat-main__footer__box-send
+        %li.chat-main__footer__box-send__text
+          = link_to "#" ,class:"sendlink" do
+            Send

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chat-space</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="side-bar__header">
+        <p class="side-bar__header__username">ebata</p>
+        <ul class="side-bar__top-items">
+          <li class="side-bar__top-items__icons">■ ◉</li>
+        </ul>
+      </div>
+      <div class="side-bar__body">
+        <ul class="side-bar__group-items">
+          <li class="side-bar__group-items__name">techcamp</li>
+          <li class="side-bar__group-items__message">まだメッセージがありません</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chat-main">
+      <div class="chat-main__header">
+        <p class="chat-main__header__title">test</p>
+        <ul class="chat-main__top-items">
+          <li class="chat-main__top-items__icons"></li>
+            <a href="#">Edit</a>
+        </ul>
+      </div>
+      <div class="chat-main__body">
+        <ul class="chat-main__body__message">
+          <li class="chat-main__body__message_list">ebata</li>
+          <li class="chat-main__body__message_text">hello!</li>
+        </ul>
+        <ul class="chat-main__body__message">
+          <li class="chat-main__body__message_list">ebata</li>
+          <li class="chat-main__body__message_text">hello!</li>
+        </ul>
+      </div>
+      <div class="chat-main__footer">
+        <ul class="chat-main__footer__message">
+          <li class="chat-main__footer__message-form"></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
