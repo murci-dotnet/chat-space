@@ -2,7 +2,7 @@
   .chat-main__header
     .chat-main__header__left
       Masa
-      %li.chat-main__header__left-member
+      %li.chat-main__header__left__member
         Member : masa
     .chat-main__header__right
       %li.chat-main__header__right-item
@@ -20,16 +20,16 @@
 
   .chat-main__footer
     .chat-main__footer__box
-      .chat-main__footer_box-left
-        .chat-main__footer__box-left__message
+      .chat-main__footer__box__left
+        .chat-main__footer__box__left__message
           -# = form_for @message do |f|
           -#   type a message
-        %label{class:"chat-main__footer__box-left__icon"}
+        %label{class:"chat-main__footer__box__left__icon"}
           %i.fa.fa-image
           %input{type:"file"}
-          %submit{class:"submit-box"}
+          %submit{class:"chat-main__footer__box__left__icon__submit-box"}
 
-      .chat-main__footer__box-send
-        %li.chat-main__footer__box-send__text
-          = link_to "#" ,class:"sendlink" do
+      .chat-main__footer__box__send
+        %li.chat-main__footer__box__send__text
+          = link_to "#" ,class:"chat-main__footer__box__send__text__sendlink" do
             Send
