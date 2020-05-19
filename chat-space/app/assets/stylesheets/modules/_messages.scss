@@ -117,38 +117,30 @@
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 0 20px;
-    bottom: 0;
-    &__box{
+    display: flex;
+    &__left{
       background-color: #d2d2d2;
       height: 50px;
-      width: calc(100vw - 380px);
-      line-height: normal;
-      margin: 0 40px 0;
-      display: flex;
-
-      &__left{
-        background-color: #d2d2d2;
+      position: relative;
+      margin: 0 0 0 40px;
+      &__message{
+        background-color: white;
         height: 50px;
-        position: relative;
-        &__message{
-          background-color: white;
-          height: 50px;
-          width: calc(100vw - 495px);
-          margin-right: 15px;
+        width: calc(100vw - 495px);
+        margin-right: 15px;
         }
-        &__icon{
-          cursor: pointer;
+      &__icon{
+        cursor: pointer;
           // display: flex;
-          i{
-            font-size: 28px;
-            position: absolute;
-            right: 25px;  
-            bottom: 10px;
-          }
-          input{
-            display: none;
-          } 
+        i{
+          font-size: 28px;
+          position: absolute;
+          right: 130px;  
+          bottom: 10px;
         }
+        input{
+          display: none;
+        } 
       }
       &__send{
         background-color: #38aef0;
@@ -156,6 +148,7 @@
         width: 100px;
         color: white;
         font-size: 20px;
+        float: right;
       }
     }
   }
