@@ -1,35 +1,25 @@
 .chat-main
   .chat-main__header
     .chat-main__header__left
-      Masa
+      = @group.name
       %li.chat-main__header__left__member
-        Member : masa
+        Member :
+      %li.chat-main__header__left__name
+        = current_user.name
     .chat-main__header__right
       %li.chat-main__header__right-item
-        = link_to "#" ,class: "editlink" do
+        = link_to edit_group_path(@group) ,class: "editlink" do
           Edit
   
   .chat-main__body
-    .chat-main__body__message
-      %p.chat-main__body__message__list
-        masa
-      %p.chat-main__body__message__time
-        2020/05/08(Fri) 16:52:51
-    %p.chat-main__body__message-text
-      hello!
+    = render @messages
 
   .chat-main__footer
     .chat-main__footer__box
-      .chat-main__footer__box__left
-        .chat-main__footer__box__left__message
-          -# = form_for @message do |f|
-          -#   type a message
-        %label{class:"chat-main__footer__box__left__icon"}
-          %i.fa.fa-image
-          %input{type:"file"}
-          %submit{class:"chat-main__footer__box__left__icon__submit-box"}
-
-      .chat-main__footer__box__send
-        %li.chat-main__footer__box__send__text
-          = link_to "#" ,class:"chat-main__footer__box__send__text__sendlink" do
-            Send
+      = form_for [@group, @message] do |f|
+        .chat-main__footer__box__left
+          = f.text_field :body, class: 'chat-main__footer__box__left__message',placeholder: 'type a message'
+          %label{class:"chat-main__footer__box__left__icon"}
+            %i.fa.fa-image
+            %input{type:"file"}
+      %input{type:"submit", class:"chat-main__footer__box__send"}

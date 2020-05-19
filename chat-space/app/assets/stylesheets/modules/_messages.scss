@@ -70,6 +70,14 @@
         top: 15px;
         margin-top: 15px;
       }
+      &__name{
+        list-style: none;
+        color: #999999;
+        font-size: 12px;
+        float: right;
+        margin-top: -20px;
+        padding-right: 0;
+      }
     }
     &__right{
       list-style: none;
@@ -108,7 +116,7 @@
   &__footer{
     background-color: #d2d2d2;
     height: 90px;
-    padding: 20px 0 0;
+    padding: 20px 0 20px;
     bottom: 0;
     &__box{
       background-color: #d2d2d2;
@@ -117,47 +125,37 @@
       line-height: normal;
       margin: 0 40px 0;
       display: flex;
-      justify-content: space-between;
+
       &__left{
         background-color: #d2d2d2;
         height: 50px;
-        width: calc(100vw - 480px);
-        display: flex;
         position: relative;
         &__message{
-          list-style: none;
           background-color: white;
           height: 50px;
           width: calc(100vw - 495px);
-          position: absolute;
+          margin-right: 15px;
         }
         &__icon{
           cursor: pointer;
+          // display: flex;
           i{
             font-size: 28px;
             position: absolute;
             right: 25px;  
             bottom: 10px;
           }
-          &submit{
+          input{
             display: none;
-          }
+          } 
         }
       }
       &__send{
-        list-style: none;
         background-color: #38aef0;
+        height: 50px;
         width: 100px;
         color: white;
         font-size: 20px;
-        text-align: center;
-        &__text{
-          margin-top: 10px;
-          &__sendlink{
-            text-decoration: none;
-            color: white;
-          }
-        }
       }
     }
   }
