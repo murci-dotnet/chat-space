@@ -49,10 +49,16 @@ $(function(){
       processData: false,
       contentType: false
     })
-    .always(function(data){
+    .done(function(data){
       var html = buildHTML(data);
       $('.chat-main__body').append(html);
       $('form')[0].reset();
     })
+    .fail(function(){
+      alert("メッセージ送信に失敗しました")
+    })
+    .always(function(){
+      $('form')[0].reset();
+    });
   });
 });
