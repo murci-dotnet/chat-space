@@ -93,6 +93,7 @@
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     padding: 20px 0 0 40px;
+    overflow: scroll;
     &__message{
       list-style: none;
       padding: 35px 0 0 0;
