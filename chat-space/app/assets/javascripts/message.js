@@ -1,6 +1,4 @@
 $(function(){
-  var last_message_id = $('.chat-main__body__message:last').data("message-id");
-  console.log(last_message_id);
 
   function buildHTML(message){
     if ( message.image ) {
