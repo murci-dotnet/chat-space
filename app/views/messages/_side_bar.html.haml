@@ -1,0 +1,21 @@
+.side-bar
+  .side-bar__header
+    %p.side-bar__header__username
+      = current_user.name
+    %ul.side-bar__header__top-items
+      %li.side-bar__header__top-items__edit
+        = link_to new_group_path() do
+          %i.fa.fa-edit.f-color
+      %li.side-bar__header__top-items__set
+        = link_to edit_user_path(current_user) do
+          %i.fa.fa-cog.fa-fw.f-color
+
+  .side-bar__body
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group) do
+          %ul.side-bar__body__group-items
+            %li.side-bar__body__group-items__name
+              = group.name
+            %li.side-bar__body__group-items__message
+              = group.show_last_message
