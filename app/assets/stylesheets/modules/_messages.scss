@@ -61,22 +61,21 @@
     &__left{
       color: #333333;
       font-size: 20px;
-      height: 100px;
+      height: 65px;
       margin-top: 35px;
+      text-align: center;
       &__member{
         list-style: none;
         color: #999999;
         font-size: 12px;
-        top: 15px;
+        display: flex;
         margin-top: 15px;
       }
       &__name{
         list-style: none;
         color: #999999;
         font-size: 12px;
-        float: right;
-        margin-top: -20px;
-        padding-right: 0;
+        margin-top: 15px;
       }
     }
     &__right{
