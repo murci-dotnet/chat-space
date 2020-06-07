@@ -4,8 +4,10 @@
       = @group.name
       %ul.chat-main__header__left__member
         Member :
-        %li.chat-main__header__left__name
-        = current_user.name
+        - @group.users.each do |user|
+          %li.chat-main__header__left__name
+          = user.name
+
     .chat-main__header__right
       %li.chat-main__header__right-item
         = link_to edit_group_path(@group) ,class: "editlink" do
