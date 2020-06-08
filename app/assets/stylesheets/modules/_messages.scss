@@ -23,8 +23,10 @@
       list-style: none;
       font-size: 16px;
       display: flex;
+      margin-left: 5px;
       .f-color{
         color: white;
+        margin-left: 3px;
       }
     }
   }
@@ -37,6 +39,7 @@
       list-style: none;
       font-weight: bold;
       padding: 20px 0 40px;
+      display: inline-block;
       &__name{
         font-size: 15px;
       }
@@ -80,9 +83,14 @@
       }
     }
     &__right{
+      width: 70px;
+      height: 40px;
       list-style: none;
       font-size:  16px;
-      margin-top: 35px;
+      margin-top: 30px;
+      text-align: center;
+      line-height: 40px;
+      border: solid 1px #38aef0;
       .editlink{
         text-decoration: none;
         color: #38aef0;
@@ -129,6 +137,7 @@
         height: 50px;
         width: calc(100vw - 495px);
         margin-right: 15px;
+        border: solid 0;
         }
       &__icon{
         cursor: pointer;
